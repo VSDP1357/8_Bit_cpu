@@ -1,0 +1,164 @@
+$date
+	Fri Jul 19 22:45:58 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module data_path_tb $end
+$var wire 8 ! ALUResult [7:0] $end
+$var reg 3 " DestReg [2:0] $end
+$var reg 8 # Immediate [7:0] $end
+$var reg 4 $ Opcode [3:0] $end
+$var reg 3 % SrcReg1 [2:0] $end
+$var reg 3 & SrcReg2 [2:0] $end
+$var reg 1 ' clk $end
+$scope module uut $end
+$var wire 3 ( DestReg [2:0] $end
+$var wire 8 ) Immediate [7:0] $end
+$var wire 4 * Opcode [3:0] $end
+$var wire 3 + SrcReg1 [2:0] $end
+$var wire 3 , SrcReg2 [2:0] $end
+$var wire 1 ' clk $end
+$var wire 1 - RegWrite $end
+$var wire 8 . ReadData2 [7:0] $end
+$var wire 8 / ReadData1 [7:0] $end
+$var wire 8 0 ALUResult [7:0] $end
+$var wire 3 1 ALUOp [2:0] $end
+$scope module alu $end
+$var wire 1 2 Zero $end
+$var wire 8 3 B [7:0] $end
+$var wire 3 4 ALUOp [2:0] $end
+$var wire 8 5 A [7:0] $end
+$var reg 8 6 Result [7:0] $end
+$upscope $end
+$scope module cu $end
+$var wire 4 7 Opcode [3:0] $end
+$var reg 3 8 ALUOp [2:0] $end
+$var reg 1 - RegWrite $end
+$upscope $end
+$scope module rf $end
+$var wire 8 9 ReadData1 [7:0] $end
+$var wire 8 : ReadData2 [7:0] $end
+$var wire 3 ; ReadReg1 [2:0] $end
+$var wire 3 < ReadReg2 [2:0] $end
+$var wire 3 = ReadReg3 [2:0] $end
+$var wire 1 - RegWrite $end
+$var wire 8 > WriteData [7:0] $end
+$var wire 3 ? WriteReg [2:0] $end
+$var wire 1 ' clk $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b10 ?
+bx >
+bz =
+b1 <
+b0 ;
+bx :
+bx 9
+b0 8
+b0 7
+bx 6
+bx 5
+b0 4
+bx 3
+x2
+b0 1
+bx 0
+bx /
+bx .
+0-
+b1 ,
+b0 +
+b0 *
+b0 )
+b10 (
+0'
+b1 &
+b0 %
+b0 $
+b0 #
+b10 "
+bx !
+$end
+#5000
+1'
+#10000
+1-
+0'
+b10000 #
+b10000 )
+b1 $
+b1 *
+b1 7
+#15000
+1'
+#20000
+0'
+#25000
+1'
+#30000
+b1 1
+b1 4
+b1 8
+0'
+b10 $
+b10 *
+b10 7
+b11 "
+b11 (
+b11 ?
+b10 %
+b10 +
+b10 ;
+#35000
+1'
+#40000
+b10 1
+b10 4
+b10 8
+0'
+b11 $
+b11 *
+b11 7
+b100 "
+b100 (
+b100 ?
+b0 &
+b0 ,
+b0 <
+b11 %
+b11 +
+b11 ;
+#45000
+1'
+#50000
+b11 1
+b11 4
+b11 8
+0'
+b100 $
+b100 *
+b100 7
+b101 "
+b101 (
+b101 ?
+b1 &
+b1 ,
+b1 <
+b100 %
+b100 +
+b100 ;
+#55000
+1'
+#60000
+0'
